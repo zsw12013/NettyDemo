@@ -19,22 +19,7 @@ import org.hyperic.sigar.Sigar;
 import org.hyperic.sigar.SigarException;
 import org.hyperic.sigar.Swap;
 import org.hyperic.sigar.Who;
-/*
- * 需要把
- * libsigar-sparc-solaris.so
-	libsigar-sparc64-solaris.so
-	libsigar-universal-macosx.dylib
-	libsigar-universal64-macosx.dylib
-	libsigar-x86-freebsd-5.so
-	libsigar-x86-freebsd-6.so
-	libsigar-x86-linux.so
-	libsigar-x86-solaris.so
-	log4j.jar
-	sigar-amd64-winnt.dll
-	sigar-x86-winnt.dll
-	sigar-x86-winnt.lib
-	复制到java环境变量bin下
- */
+
 public class TestSigar {
     public static void main(String[] args) {
         try {

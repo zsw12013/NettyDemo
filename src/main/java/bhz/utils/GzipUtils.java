@@ -41,7 +41,7 @@ public class GzipUtils {
     public static void main(String[] args) throws Exception{
 		
     	//读取文件
-    	String readPath = System.getProperty("user.dir") + File.separatorChar + "sources" +  File.separatorChar + "ddd.jpg";
+    	String readPath = System.getProperty("user.dir") + File.separatorChar + "sources" +  File.separatorChar + "006.jpg";
         File file = new File(readPath);  
         FileInputStream in = new FileInputStream(file);  
         byte[] data = new byte[in.available()];  
@@ -58,7 +58,7 @@ public class GzipUtils {
         System.out.println("还原之后大小:" + ret2.length);
         
         //写出文件
-        String writePath = System.getProperty("user.dir") + File.separatorChar + "receive" +  File.separatorChar + "ddd.jpg";
+        String writePath = System.getProperty("user.dir") + File.separatorChar + "receive" +  File.separatorChar + "006.jpg";
         FileOutputStream fos = new FileOutputStream(writePath);
         fos.write(ret2);
         fos.close();    	
